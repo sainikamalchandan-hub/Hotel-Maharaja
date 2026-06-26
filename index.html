@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Maharaja | Suratgarh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Hotel Maharaja home">
+      <span class="brand-mark">HM</span>
+      <span>
+        <strong>Hotel Maharaja</strong>
+        <small>Hotel & Restaurant</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#rooms">Rooms</a>
+      <a href="#experience">Experience</a>
+      <a href="#booking">Book Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Indira Circle, Suratgarh</p>
+        <h1>Hotel Maharaja</h1>
+        <p class="hero-copy">A royal stay on Bikaner Road with warm hospitality, elegant rooms, smooth check-in, and a restaurant made for relaxed family dining.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#booking">Reserve Your Room</a>
+          <a class="secondary-btn" href="tel:01509221955">Call 01509 221955</a>
+        </div>
+      </div>
+      <aside class="arrival-card" aria-label="Check in details">
+        <span>Check-in</span>
+        <strong>12:00 pm</strong>
+        <span>Check-out</span>
+        <strong>11:00 am</strong>
+      </aside>
+    </section>
+
+    <section class="quick-info">
+      <article>
+        <span>Location</span>
+        <strong>8W43+XR Suratgarh</strong>
+      </article>
+      <article>
+        <span>Booking</span>
+        <strong>Direct reservation available</strong>
+      </article>
+      <article>
+        <span>Perfect For</span>
+        <strong>Family, business and highway stays</strong>
+      </article>
+    </section>
+
+    <section class="split-section" id="rooms">
+      <div class="room-image">
+        <img src="assets/royal-room.png" alt="Premium room at Hotel Maharaja">
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">Rooms with calm comfort</p>
+        <h2>Soft lighting, crisp bedding, and a stay that feels composed.</h2>
+        <p>Choose from practical deluxe rooms to more spacious royal suites. Each option is designed for travelers who want clean comfort, privacy, and easy access to the restaurant and main road.</p>
+        <div class="room-grid">
+          <article>
+            <h3>Deluxe Room</h3>
+            <p>Comfortable stay for two with all essentials.</p>
+            <strong>Rs. 2,199 / night</strong>
+          </article>
+          <article>
+            <h3>Royal Premium</h3>
+            <p>More space, refined interiors, ideal for family stays.</p>
+            <strong>Rs. 3,499 / night</strong>
+          </article>
+          <article>
+            <h3>Maharaja Suite</h3>
+            <p>Signature room experience with extra comfort.</p>
+            <strong>Rs. 5,999 / night</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Good vibes, royal service</p>
+        <h2>Everything a guest expects from a dependable hotel.</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <span>01</span>
+          <h3>Restaurant Dining</h3>
+          <p>Fresh meals and comfortable seating for guests, families, and road travelers.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Easy Registration</h3>
+          <p>Simple booking details, guest count, ID preference, arrival time, and contact confirmation.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Flexible Payments</h3>
+          <p>Cash at hotel, UPI, credit card, debit card, or corporate billing options.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Prime Road Access</h3>
+          <p>Located at Indira Circle on Suratgarh - Bikaner Road for quick arrivals and departures.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-copy">
+        <p class="eyebrow">Reservation desk</p>
+        <h2>Register your stay and preview the amount instantly.</h2>
+        <p>Fill in the guest details, select room type and payment method, then send the request to the hotel desk. The amount updates automatically before confirmation.</p>
+        <ul>
+          <li>12% GST calculation included</li>
+          <li>Extra guest charge after two guests</li>
+          <li>Advance payment options available</li>
+        </ul>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <label>
+            Full Name
+            <input type="text" name="fullName" placeholder="Guest name" required>
+          </label>
+          <label>
+            Mobile Number
+            <input type="tel" name="mobile" placeholder="+91 98765 43210" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Check-in Date
+            <input type="date" name="checkin" id="checkin" required>
+          </label>
+          <label>
+            Check-out Date
+            <input type="date" name="checkout" id="checkout" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Room Type
+            <select name="roomType" id="roomType">
+              <option value="2199">Deluxe Room - Rs. 2,199</option>
+              <option value="3499">Royal Premium - Rs. 3,499</option>
+              <option value="5999">Maharaja Suite - Rs. 5,999</option>
+            </select>
+          </label>
+          <label>
+            Guests
+            <input type="number" name="guests" id="guests" value="2" min="1" max="6">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            ID Proof
+            <select name="idProof">
+              <option>Aadhaar Card</option>
+              <option>Driving Licence</option>
+              <option>Passport</option>
+              <option>Voter ID</option>
+            </select>
+          </label>
+          <label>
+            Payment Type
+            <select name="paymentType">
+              <option>UPI</option>
+              <option>Cash at Hotel</option>
+              <option>Credit Card</option>
+              <option>Debit Card</option>
+              <option>Corporate Billing</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Special Request
+          <textarea name="request" rows="3" placeholder="Early arrival, extra bed, restaurant booking..."></textarea>
+        </label>
+
+        <div class="amount-box" aria-live="polite">
+          <div>
+            <span>Estimated Amount</span>
+            <strong id="amount">Rs. 2,463</strong>
+          </div>
+          <small id="amountNote">1 night, tax included</small>
+        </div>
+
+        <button class="submit-btn" type="submit">Submit Booking Request</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Hotel Maharaja, Suratgarh</h2>
+        <p>Indira Circle, Suratgarh - Bikaner Rd, Suratgarh, Rajasthan 335804</p>
+      </div>
+      <div class="contact-actions">
+        <a href="tel:01509221955">01509 221955</a>
+        <a href="#booking">Reserve Now</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8W43%2BXR%20Suratgarh%2C%20Rajasthan">Open Map</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
